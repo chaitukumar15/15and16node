@@ -179,6 +179,64 @@ http://localhost:3000/products/1?id=10&u=chaitanya
 ................................day 5....................
 
 query and param -> 
+read file ->crud
+
+........ ................day 6.................
+
+async - > callback -> 
+
+
+read file -> file read -> 
+
+fs.readFile("./index.json", "utf-8", (err, data) => {
+  
+        console.log(err);
+        
+      if (err) {
+        res.write(JSON.stringify(err.message));
+      } else {
+        res.write(data);
+      }
+      res.end();
+    });
+    \
+write file :  to create a file or to override the data in the file 
+
+append file : to append the data to exosting file / to create file if not exist 
+
+unlink -> delete a file 
+
+
+
+
+task 0->  
+
+create a file -> products.json 
+
+it require data -> fakestore data pass 
+
+call the api using fetch 
+products.json -> add the data to it 
+
+
+task 1- 
+
+index.html -> 
+
+read the file and add the conent of that file to index2.html 
+
+read index2,html and send it as res 
+
+search about method which does this operation 
+
+task 2- 
+
+practice all crud operation in fs system 
+
+
+
+
+
 
 
 
