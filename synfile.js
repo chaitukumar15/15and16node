@@ -8,15 +8,14 @@ var server = http.createServer((req, res) => {
   console.log(parsedurl);
 
   if (parsedurl.pathname == "/products") {
-    // 1.extentions,filename ,conetxt, encoded ,calllbacl
-    var g="chaiotanya";
+fs
 
-    fs.writeFile("index.txt","g", "utf-8", (err) => {
+    fs.readFile("indx.html", "utf-8", (err,data) => {
       if (err) {
         res.write(JSON.stringify(err.message));
       } else {
-        res.write("file has been successfully created");
-        console.log("hello priniting");
+        res.write(data);
+        
       }
       res.end();
     });
@@ -26,7 +25,7 @@ var server = http.createServer((req, res) => {
   }
 });
 
-var port = 3002;
+var port = 3006;
 
 server.listen(port, () => {
   console.log("server started " + "http://localhost:" + port);

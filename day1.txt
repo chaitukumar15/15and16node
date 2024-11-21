@@ -225,6 +225,14 @@ index.html ->
 
 read the file and add the conent of that file to index2.html 
 
+
+
+1.readfile -> 
+
+2.write -> index1.html -> 
+
+
+
 read index2,html and send it as res 
 
 search about method which does this operation 
@@ -234,13 +242,75 @@ task 2-
 practice all crud operation in fs system 
 
 
+...................day 7..........................
+what we need to see -> rename , copy , do file exist 
 
 
 
+fetch("url",{
+  method:"post",
+  headers:{
+    "content-type":"application/json",
+    "authorization":barer token  jwt 
+  },
+  body:json.s({
+    name:"chaitanya"
+  })
+})
 
 
 
+role based login -> 
 
+
+register -> local storage - stotage -> 
+
+username 
+password
+conpass 
+mail 
+flag -> user , admin (select options )
+
+[
+  {},{},{}
+]
+
+
+dummyjson-> auth -> jwt 
+
+
+
+how to get data -> body -> from client in pure node
+
+var body=""
+
+events -> req.on("data",(chunks)=>{
+
+
+body+=chunks.toString();
+
+
+})
+
+
+req.on("end",()=>{
+
+log-> body
+
+
+})
+
+
+http://localhiost:3000/data  -> post
+task -> get the body from the user -> 
+
+{name:"h"}
+
+write the content in the file -> 
+
+.........
+http://localhiost:3000/data  -> get
+read the file and send it as a res 
 
 
 
