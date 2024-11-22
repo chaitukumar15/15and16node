@@ -1,0 +1,25 @@
+{
+  "name": "15and16node",
+  "version": "1.0.0",
+  "description": "node classes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitukumar15/15and16node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaitukumar15/15and16node/issues"
+  },
+  "homepage": "https://github.com/chaitukumar15/15and16node#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "nodemon": "^3.1.7"
+  }
+}

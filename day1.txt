@@ -313,11 +313,33 @@ http://localhiost:3000/data  -> get
 read the file and send it as a res 
 
 
+.........................................
+
+nodemon -> to automate restarting the server 
+
+npm init -y
+
+pacage.json -> will contain the meta data about the project  
+
+1.0.1
+1.1.1-> 
+2.0.0 -> 
+"1--> major update 
+.0 -> minor update  
+.0 -> patch update ,
+
+node package manager -> 
+
+1.  git maintain
+2.  pacages / libraries 
+   
+   collection of predefined code
+    wich is written in function/
+     class that can be resuesd 
+     and refers to a single fun 
 
 
-
-
-
+npm install/i
 
 
 
