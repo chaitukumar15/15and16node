@@ -339,7 +339,13 @@ node package manager ->
      and refers to a single fun 
 
 
-npm install/i
+npm install/i pacage ;
+
+
+
+
+
+
 
 
 
