@@ -339,11 +339,36 @@ node package manager ->
      and refers to a single fun 
 
 
-npm install/i pacage ;
+npm install/i pacage ; will install all pacages based on pacage.josn/lock file 
 
 
 
+............................................
 
+ dir - directoryy / folder 
+
+create  -> mkdir 
+
+read -> readdir
+
+remove => rm
+
+-->
+
+////  file create ->  
+
+
+fs.craetefile("D:\raju\ram","data",,"encodedtyoe",(err)=>{
+
+})
+
+////////////////////////
+
+task -> nested mkdir -> 
+
+ravi/raju dont use recursive 
+
+ravi / raju, ram  use recursive 
 
 
 
