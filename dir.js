@@ -3,26 +3,51 @@ var http = require("http");
 var fs = require("fs");
 
 var server = http.createServer((req, res) => {
-  var exs = fs.existsSync("index10.html");
 
-  console.log(exs);
 
-  fs.copyFile("index2.html", "index3.html", (err) => {
-    if (err) {
-      res.write(JSON.stringify(err.message));
-      res.end();
-    } else {
-      fs.readFile("index2.html", "utf-8", (err, data) => {
-        if (err) {
-          res.write(JSON.stringify(err.message));
-          res.end();
-        } else {
-          res.write(data);
-          res.end();
-        }
-      });
+  var d=fs.readdirSync("u");
+
+
+  if(d.length>0){
+
+  for( i of d){
+    console.log(__filename);
+    
+    console.log(i);
+    fs.unlinkSync("u/"+i)
+  }
+
+  fs.rmdir("u",(err)=>{
+
+    if(err){
+            res.write(JSON.stringify(err.message));
+        res.end()
+      }else{
+        res.write("folder successfully deleted");
+        res.end()
     }
-  });
+
+  })
+
+  }
+
+  console.log(d);
+  res.end("hi")
+     
+    // fs.rmdir("u",(err)=>{
+
+
+    //   if(err){
+
+    //     res.write(JSON.stringify(err.message));
+    //     res.end()
+    //   }else{
+    //     res.write("folder successfully deleted");
+    //     res.end()
+    //   }
+
+
+    // })
 });
 
 var port = 3000;

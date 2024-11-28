@@ -20,6 +20,7 @@
   "homepage": "https://github.com/chaitukumar15/15and16node#readme",
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "express": "^4.21.1",
     "nodemon": "^3.1.7"
   }
 }

@@ -370,6 +370,58 @@ ravi/raju dont use recursive
 
 ravi / raju, ram  use recursive 
 
+..............................
+
+rm /  rmdir 
+
+rmdir -> cnt delete dir 
+
+
+readdir-> [h,in.txt];
+
+
+
+
+
+
+
+rm -> ricursive true 
+
+...............................................
+
+http , fs , url , params , query , req , res ,modules 
+path , method
+
+
+express js ->
+light weight framework:
+
+
+library -> 
+framework -> 
+
+how to use it 
+
+
+
+install express 
+
+
+var express=require("express");
+
+var app=express();
+
+// htttp methods ->  
+
+app.get("endpoint",(req,res)=>{
+
+  res.send("hello world")
+});
+
+
+app.listen(port,()=>{
+  
+})
 
 
 
