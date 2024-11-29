@@ -420,8 +420,15 @@ app.get("endpoint",(req,res)=>{
 
 
 app.listen(port,()=>{
-  
+
 })
+
+.............................................
+query , params 
+
+query -> url -> parse  (true)-> query-> object 
+
+
 
 
 
