@@ -1,14 +1,11 @@
 var express = require("express");
 var fs = require("fs");
 var app = express();
+var { otp } = require("./otp.js");
 
-var {filterr}=require("./filteration.js")
+var { filterr } = require("./filteration.js");
 
 // htttp methods ->
-
-
-
-
 
 app.get("/products", async (req, res) => {
   let response = await fetch("https://fakestoreapi.com/products");
@@ -39,18 +36,16 @@ app.get("/html", async (req, res) => {
         //   return val.category == "men's clothing";
         // });
 
-        var filtereddata=filterr("men's clothing",result)
+        var filtereddata = filterr("men's clothing", result);
         console.log(filtereddata);
 
-        console.log(filterr,"hello");
-        
+        console.log(filterr, "hello");
 
         res.send(filtereddata);
       } else {
-        
-        var filtereddata=filterr("jewelery",result)
+        var filtereddata = filterr("jewelery", result);
         console.log(filtereddata);
-        console.log(filterr,"hello");
+        console.log(filterr, "hello");
         res.send(filtereddata);
       }
     } else {
@@ -59,6 +54,11 @@ app.get("/html", async (req, res) => {
   } else {
     res.send("provide a/d as an order");
   }
+});
+
+app.get("/otp", (req, res) => {
+  console.log(otp);
+  res.send(otp());
 });
 
 var port = 3000;
