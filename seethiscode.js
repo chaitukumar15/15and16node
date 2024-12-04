@@ -19,6 +19,11 @@ app.use((req, res, next) => {
  
 });
 
+app.post("/bodyy", (req, res) => {
+    console.log("Form Data:", req.body);
+    res.send(req.body);
+  });
+
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/products", async (req, res) => {
@@ -31,10 +36,7 @@ app.get("/products", async (req, res) => {
 
 
 
-app.post("/bodyy", (req, res) => {
-  console.log("Form Data:", req.body);
-  res.send(req.body);
-});
+
 
 app.listen(3001, () => {
   console.log("Server has been connected");

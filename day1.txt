@@ -432,7 +432,10 @@ query -> url -> parse  (true)-> query-> object
 
 
 middle ware 
-:
+: it is a funct which as access to req and res objects 
+
+express.json();
+express.
 
 
 
